@@ -1,8 +1,7 @@
-
 import { combineReducers } from 'redux';
 
 const currentCount = (state = 0, action) => {
-  switch (action.type) {
+  switch (action.value) {
     case 'INCREASE_COUNTER':
     return state + 1
     case 'DECREASE_COUNTER':
@@ -34,7 +33,7 @@ const currentCity = (state = "", action) => {
 }
 
 const users = (state = [], action) => {
-  switch (action.type) {
+  switch (action.value) {
     case 'ADD_USER':
     return [...state,action.value]
     case 'REMOVE_USER':
@@ -56,7 +55,7 @@ const currentTemp = (state = 0, action) => {
 
 const isLoading = (state = false, action) => {
   switch (action.type) {
-    case 'IS_LOADING':
+    case 'SET_IS_LOADING':
     return action.value
 
       default: 
@@ -106,9 +105,11 @@ const videoScale = (state = "1", action) => {
 
 
 
+
+// combine reducers (and export) here
 export default combineReducers({
   currentCount,
-  speciaText,
+  specialText,
   currentCity,
   users,
   currentTemp,
@@ -118,4 +119,3 @@ export default combineReducers({
   currentUserSort,
   videoScale
 })
-// combine reducers (and export) here

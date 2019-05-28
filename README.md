@@ -132,8 +132,8 @@ View this video to see how the app should work once you are done coding. [Video]
 
   * SpecialTextContainer.js
     * map a prop called `text` to the state `specialText`
-
-  * UsersContainer.js
+_______
+ * UsersContainer.js
     * map a prop called `users` to the state `users`
     * map a prop called `firstNameFilter` to the state `searchText`
     * map a prop called `sortOn` to the state `currentUserSort`

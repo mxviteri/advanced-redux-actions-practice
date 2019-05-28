@@ -24,9 +24,10 @@ export const addUser = (user) => {
   }
 }
 
-export const removeUser = () => {
+export const removeUser = (user) => {
   return {
     type: "REMOVE_USER",
+    value: user
   }
 }
 
