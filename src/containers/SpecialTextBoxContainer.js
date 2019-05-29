@@ -8,4 +8,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(null, mapDispatchToProps)(SpecialTextBox);
+export default connect(mapDispatchToProps, null)(SpecialTextBox);
